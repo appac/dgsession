@@ -1,0 +1,10 @@
+{
+  "name": "compose_workshop",
+  "packageManager": "yarn@3.2.3",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "typescript": "^4.8.2"
+  }
+}
