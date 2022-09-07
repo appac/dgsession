@@ -1,4 +1,4 @@
-import { Model } from 'objection';
+import Model from '../utilities/objection'
 
 export class Session extends Model {
     id: string;
