@@ -1,8 +1,8 @@
-
+import { Knex } from "knex";
 
 // Update with your config settings.
 
-const config = {
+const config: { [key: string]: Knex.Config } = {
   development: {
     client: "pg",
     connection: {
