@@ -3204,6 +3204,10 @@ __metadata:
 "database@workspace:packages/database":
   version: 0.0.0-use.local
   resolution: "database@workspace:packages/database"
+  dependencies:
+    "@types/pg": ^8
+    knex: ^2.3.0
+    pg: ^8.8.0
   languageName: unknown
   linkType: soft
 

@@ -4521,7 +4521,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/database", {\
           "packageLocation": "./packages/database/",\
           "packageDependencies": [\
-            ["database", "workspace:packages/database"]\
+            ["database", "workspace:packages/database"],\
+            ["@types/pg", "npm:8.6.5"],\
+            ["knex", "virtual:ee30e4e8621888118e3112c9a4791d8c9d181961a7fc656afb8f9862703185d5aaf75e7d8371b318217947e6ff3ef744eedc1fa54c88d453e07d11fef918be75#npm:2.3.0"],\
+            ["pg", "virtual:ee30e4e8621888118e3112c9a4791d8c9d181961a7fc656afb8f9862703185d5aaf75e7d8371b318217947e6ff3ef744eedc1fa54c88d453e07d11fef918be75#npm:8.8.0"]\
           ],\
           "linkType": "SOFT"\
         }]\

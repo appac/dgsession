@@ -1,3 +1,10 @@
 {
-  "name": "database"
+  "name": "database",
+  "dependencies": {
+    "knex": "^2.3.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8"
+  }
 }
