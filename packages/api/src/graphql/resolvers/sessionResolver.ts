@@ -1,4 +1,6 @@
 import { gql } from "apollo-server"
+import { Session } from "../../models/SessionModel";
+import { Resolvers } from "../schema-types.gen";
 
 export const sessionSchema = gql`
     type Session {
@@ -21,20 +23,21 @@ export const sessionSchema = gql`
     type Query {
         sessions: [Session]!
     }
+
+    type Mutation {
+        createSession(session: SessionInput!): Session!
+    }
 `
 
-export const sessionResolver = {
+export const sessionResolver: Resolvers = {
     Query: {
         sessions: async () => {
-            return [{
-                id: 'bc9546db-b7a2-4907-bd2c-61a20a72c505',
-                title: 'Writing Docker Compose Files',
-                body: 'In this session, we\'ll cover writing a docker compose file, with an existing application in mind.',
-                video: 'https://some.url.to.video.co/abc123',
-                scheduled: '2022-09-13 15:00:00',
-                created: '2022-09-07 09:12:37',
-                completed: false
-            }];
+            return Session.query();
         }
     },
+    Mutation: {
+        createSession: async (_, {session}) => {
+            return Session.query().insertGraph(session).returning('*');
+        }
+    }
 }

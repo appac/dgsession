@@ -1,0 +1,11 @@
+schema: "./src/graphql/schema.ts"
+errorsOnly: true
+generates:
+  ./src/graphql/schema-types.gen.ts:
+    config:
+      useIndexSignature: true
+      namingConvention:
+        enumValues: keep
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"

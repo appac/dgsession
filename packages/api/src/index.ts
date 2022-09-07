@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server';
 import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
-import {schema} from './graphql/utilities/schema'
+import {schema} from './graphql/schema'
 
 async function startApolloServer() {
   const server = new ApolloServer({
