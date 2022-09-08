@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  api:
+    image: node:lts
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
+    command: yarn workspace api start:development
+    networks:
+      - backend
+    ports:
+      - 4000:4000

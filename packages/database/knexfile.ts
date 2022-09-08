@@ -6,7 +6,7 @@ const config: { [key: string]: Knex.Config } = {
   development: {
     client: "pg",
     connection: {
-      host: 'localhost',
+      host: 'database',
       port: 5432,
       user: 'dgdev',
       password: 'dgdev',
@@ -21,7 +21,7 @@ const config: { [key: string]: Knex.Config } = {
   production: {
     client: "pg",
     connection: {
-      host: 'localhost',
+      host: 'database',
       port: 5432,
       user: 'dgdev',
       password: 'dgdev',

@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  database:
+    image: postgres:latest
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - backend
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=dgdev
+      - POSTGRES_PASSWORD=dgdev
+      - POSTGRES_DB=dgdev
+  database_init:
+    image: node:lts
+    volumes:
+      - .:/opt/app
+      - db-data:/var/lib/postgresql/data
+    working_dir: /opt/app
+    command: yarn workspace database migrate:latest
+    networks:
+      - backend
+    depends_on:
+      - database
