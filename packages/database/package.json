@@ -7,5 +7,9 @@
   },
   "devDependencies": {
     "@types/pg": "^8"
+  },
+  "scripts": {
+    "migrate:make": "knex migrate:make",
+    "migrate:latest": "knex migrate:latest"
   }
 }
