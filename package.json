@@ -1,5 +1,5 @@
 {
-  "name": "compose_workshop",
+  "name": "docker_guild_session_tracker",
   "packageManager": "yarn@3.2.3",
   "workspaces": [
     "packages/*"

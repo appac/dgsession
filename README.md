@@ -1,1 +1,1 @@
-# compose_workshop
+# Docker Guild Session Tracker

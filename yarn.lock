@@ -3030,14 +3030,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compose_workshop@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "compose_workshop@workspace:."
-  dependencies:
-    typescript: ^4.8.2
-  languageName: unknown
-  linkType: soft
-
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -3360,6 +3352,14 @@ __metadata:
   checksum: fa05e18324510d7283f55862f3161c6759a3f2f8dbce491a2fc14c8324c498286c54282c1f0e933cb930da8419b30679389499b919122952a4f8592362ef4615
   languageName: node
   linkType: hard
+
+"docker_guild_session_tracker@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "docker_guild_session_tracker@workspace:."
+  dependencies:
+    typescript: ^4.8.2
+  languageName: unknown
+  linkType: soft
 
 "doctrine@npm:^2.1.0":
   version: 2.1.0

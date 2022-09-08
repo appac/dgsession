@@ -17,7 +17,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "compose_workshop",\
+        "name": "docker_guild_session_tracker",\
         "reference": "workspace:."\
       },\
       {\
@@ -37,8 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["api", ["workspace:packages/api"]],\
-      ["compose_workshop", ["workspace:."]],\
       ["database", ["workspace:packages/database"]],\
+      ["docker_guild_session_tracker", ["workspace:."]],\
       ["website", ["workspace:packages/website"]]\
     ],\
     "fallbackPool": [\
@@ -4296,16 +4296,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["compose_workshop", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["compose_workshop", "workspace:."],\
-            ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
       ["concat-map", [\
         ["npm:0.0.1", {\
           "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-902a9f5d89.zip/node_modules/concat-map/",\
@@ -4739,6 +4729,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-type", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["docker_guild_session_tracker", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["docker_guild_session_tracker", "workspace:."],\
+            ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["doctrine", [\
