@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  website:
+    image: node:lts
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
+    command: yarn workspace website dev
+    networks:
+      - frontend
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
