@@ -5,4 +5,4 @@ networks:
   backend:
 
 volumes:
-  db-data:
+  db_data:

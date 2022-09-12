@@ -10,6 +10,6 @@
   "scripts": {
     "start": "docker-compose -f docker-compose.yml -f ./packages/api/docker-compose.api.yml -f ./packages/database/docker-compose.database.yml -f ./packages/website/docker-compose.website.yml up",
     "stop": "docker-compose down --remove-orphans",
-    "prune-db": "docker volume rm compose_workshop_db-data"
+    "prune-db": "docker volume rm dgsession_db_data"
   }
 }
