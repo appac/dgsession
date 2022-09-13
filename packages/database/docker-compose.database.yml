@@ -17,7 +17,6 @@ services:
     image: node:lts
     volumes:
       - .:/opt/app
-      - db_data:/var/lib/postgresql/data
     working_dir: /opt/app
     command: yarn workspace database ts-node ./src/scripts/init.ts
     networks:
